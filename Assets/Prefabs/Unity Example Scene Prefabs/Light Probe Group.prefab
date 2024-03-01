@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4650981378620503396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6091361318754983778}
+  - component: {fileID: 1023068262280475933}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6091361318754983778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650981378620503396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &1023068262280475933
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650981378620503396}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 22.914612, y: 6.655401, z: 5.5730505}
+  - {x: 22.90405, y: 6.8806596, z: -11.96464}
+  - {x: 22.914612, y: 3.7402854, z: 5.5730505}
+  - {x: 22.90405, y: 3.633563, z: -11.96464}
+  - {x: 5.408499, y: 6.1757574, z: 6.845431}
+  - {x: 4.844545, y: 5.5306015, z: -12.016901}
+  - {x: 5.408499, y: 2.8704305, z: 6.845431}
+  - {x: 4.844545, y: 3.1827068, z: -12.016901}
+  - {x: 11.760274, y: 3.4461777, z: -2.0711222}
+  - {x: 11.639407, y: 3.5859647, z: 6.177277}
+  - {x: 11.583065, y: 3.6304367, z: -10.703693}
+  - {x: 0, y: 2.701845, z: -2.121283}
+  - {x: 5.1004906, y: 2.6237307, z: 4.9548497}
+  m_Dering: 1
