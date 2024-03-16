@@ -32,17 +32,25 @@ namespace UnityEngine.XR.Content.Interaction.Analytics
             var grabPerlerBeadParameter = new GrabPerlerBead();
             foreach (var socket in m_InfinityPegSockets)
             {
-                foreach (var interactable in socket.interactablesSelected)
+                if (socket != null) // Check if the socket is not null
                 {
-                    XrcAnalyticsUtils.Register(interactable as XRBaseInteractable, grabPerlerBeadParameter);
+                    foreach (var interactable in socket.interactablesSelected)
+                    {
+                        if (interactable != null) // Check if the interactable is not null
+                        {
+                            XrcAnalyticsUtils.Register(interactable as XRBaseInteractable, grabPerlerBeadParameter);
+                        }
+                    }
+
+                    socket.selectEntered.AddListener(args =>
+                    {
+                        if (args.interactableObject != null) // Check if the interactableObject is not null
+                        {
+                            XrcAnalyticsUtils.Register(args.interactableObject as XRBaseInteractable, grabPerlerBeadParameter);
+                        }
+                    });
                 }
-
-                socket.selectEntered.AddListener(args => XrcAnalyticsUtils.Register(args.interactableObject as XRBaseInteractable, grabPerlerBeadParameter));
             }
-
-            var connectPerlerBeadParameter = new ConnectPerlerBead();
-            foreach (var gridSocket in m_GridCenter.GetComponentsInChildren<XRSocketInteractor>())
-                XrcAnalyticsUtils.Register(gridSocket, connectPerlerBeadParameter);
         }
     }
 }

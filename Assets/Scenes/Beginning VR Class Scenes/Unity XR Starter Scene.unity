@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Complete XR Origin Set Up
       objectReference: {fileID: 0}
+    - target: {fileID: 3040000797812906716, guid: fd074e9f84578964c88e8f16f95cc560, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4760015559080650329, guid: fd074e9f84578964c88e8f16f95cc560, type: 3}
       propertyPath: m_SnapTurnProvider
       value: 
@@ -844,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 1887635831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
